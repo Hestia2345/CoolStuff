@@ -1,0 +1,40 @@
+button.buttonstuff{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+
+h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+h1.normal{
+    color: white;
+}
+
+h1.beagoodwat{
+    color: turquoise;
+}
+
+.beagoodwat{
+    animation-name: smaller;
+    animation-duration: 2s;
+}
+
+@keyframes smaller {
+    from { font-size: 300px;
+        opacity: 1;
+        transform: rotate(45deg);
+        top: 15%;
+        left: 10%}
+    to { font-size: 0px;
+        opacity: 0;
+        transform: rotate(0deg);
+        top: 50%;
+    left: 50%}
+}
