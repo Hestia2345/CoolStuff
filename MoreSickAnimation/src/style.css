@@ -1,0 +1,57 @@
+button.buttonstuff{
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+h1.normal{
+    color: white;
+}
+
+h1.beagoodwat{
+    color: turquoise;
+    animation-name: go;
+    animation-duration: 1s;
+}
+
+h1.ufotang{
+    color: turquoise;
+    animation-name: goaway;
+    animation-duration: 1s;
+}
+
+@keyframes go {
+    from { font-size: 100px;
+        opacity: 0;
+        transform: rotate(25deg);
+        top: 50%;
+        left: 120%}
+    to { font-size: 200px;
+        opacity: 1;
+        transform: rotate(0deg);
+        top: 25%;
+    left: 10%}
+}
+
+@keyframes goaway {
+    from { font-size: 200px;
+        opacity: 1;
+        transform: rotate(0deg);
+        top: 25%;
+        left: 10%}
+    to { font-size: 100px;
+        opacity: 0;
+        transform: rotate(25deg);
+        top: 50%;
+    left: -120%}
+}
